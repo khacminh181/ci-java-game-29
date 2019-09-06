@@ -1,7 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d05f4070-ecc9-442f-87bc-ee8090cf9d48" name="Default Changelist" comment="" />
+    <list default="true" id="d05f4070-ecc9-442f-87bc-ee8090cf9d48" name="Default Changelist" comment="Update: Load background image">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/background/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/bullets/blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/bullets/cyan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/bullets/green.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/bullets/pink.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/bullets/red.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/bullets/white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/bullets/yellow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/explosion-big/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/explosion-big/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/explosion-big/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/explosion-big/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/explosion-big/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/explosion-big/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/explosion-big/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/explosion-big/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/explosion/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/explosion/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/explosion/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/explosion/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/explosion/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/explosion/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/explosion/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/explosion/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/level0/black/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/level0/black/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/level0/black/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/level0/black/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/level0/black/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/level0/black/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/level0/black/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/level0/black/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/level0/blue/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/level0/blue/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/level0/blue/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/level0/blue/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/level0/pink/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/level0/pink/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/level0/pink/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/level0/pink/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/hud/enemy-banner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/hud/numbers/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/hud/numbers/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/hud/numbers/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/hud/numbers/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/hud/numbers/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/hud/numbers/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/hud/numbers/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/hud/numbers/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/hud/numbers/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/hud/numbers/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/hud/picture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/hud/player.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/hud/power.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/hud/ring.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/items/power-up-blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/items/power-up-red.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/menus/quit-color.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/menus/quit-white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/menus/start-color.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/menus/start-white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/player-spells/a/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/player-spells/a/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/player-spells/a/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/player-spells/a/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/explosions/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/explosions/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/explosions/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/explosions/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/explosions/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/explosions/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/explosions/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/explosions/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/left/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/left/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/left/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/left/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/left/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/left/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/right/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/right/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/right/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/right/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/right/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/right/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/straight/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/straight/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/straight/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/straight/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/straight/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/straight/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/straight/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/scenes/background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/scenes/game-over-background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/scenes/menu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/scenes/thanks-for-playing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/scenes/victory-background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/scenes/victory.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/sphere-spells/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/sphere-spells/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/sphere-spells/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/sphere-spells/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/sphere/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/sphere/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/sphere/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/sphere/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/music/1.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/music/bgm/ending.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/music/bgm/game-over.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/music/bgm/title.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/music/sfx/enemy-explosion-big.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/music/sfx/enemy-explosion.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/music/sfx/item-collect.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/music/sfx/ok.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/music/sfx/option.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/music/sfx/player-dead.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/music/sfx/player-shoot.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/music/sfx/powerup.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CI-game/GameWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game/GameWindow$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CI-game/GameWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game/GameWindow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameCanvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameCanvas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,43 +141,52 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GameWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-72">
-              <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+            <state relative-caret-position="239">
+              <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#604#605#0" expanded="true" />
-                <element signature="e#656#657#0" expanded="true" />
+                <element signature="e#415#568#0" expanded="true" />
+                <element signature="e#567#568#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/GameCanvas.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1128">
+              <caret line="56" column="37" selection-start-line="56" selection-start-column="37" selection-end-line="56" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1155#1156#0" expanded="true" />
+                <element signature="e#1455#1456#0" expanded="true" />
+                <element signature="e#1491#1492#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GameCanvas.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/assets/images/players/straight/0.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Program.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="2" column="49" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
-              <folding>
-                <element signature="e#66#67#0" expanded="true" />
-                <element signature="e#121#122#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="72">
+              <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/images/background/0.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -63,12 +198,15 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Program.java" />
-        <option value="$PROJECT_DIR$/src/GameCanvas.java" />
         <option value="$PROJECT_DIR$/src/GameWindow.java" />
+        <option value="$PROJECT_DIR$/src/GameCanvas.java" />
+        <option value="$PROJECT_DIR$/src/Program.java" />
       </list>
     </option>
   </component>
@@ -78,6 +216,7 @@
     <option name="width" value="1371" />
     <option name="height" value="815" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -93,6 +232,39 @@
             <path>
               <item name="CI-game" type="b2602c69:ProjectViewProjectNode" />
               <item name="CI-game" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CI-game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CI-game" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CI-game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CI-game" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="background" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CI-game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CI-game" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="players" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CI-game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CI-game" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="players" type="462c0819:PsiDirectoryNode" />
+              <item name="straight" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CI-game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CI-game" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -104,13 +276,20 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -148,23 +327,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1567773534122</updated>
-      <workItem from="1567773537096" duration="1953000" />
+      <workItem from="1567773537096" duration="7755000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1953000" />
+    <option name="totallyTimeSpent" value="7755000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="957" height="743" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" weight="0.24917673" />
+      <window_info content_ui="combo" id="Project" order="5" weight="0.26893523" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" />
@@ -173,10 +351,10 @@
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.32954547" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.3306189" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="10" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32899022" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="12" />
       <window_info anchor="right" id="Theme Preview" order="0" />
@@ -193,36 +371,52 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update: Load background image" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update: Load background image" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Program.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="49" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
-          <folding>
-            <element signature="e#66#67#0" expanded="true" />
-            <element signature="e#121#122#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/assets/images/background/0.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GameCanvas.java">
+    <entry file="jrt:///usr/lib/jvm/java-1.11.0-openjdk-amd64!/java.base/java/lang/Thread.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="176">
+          <caret line="85" column="37" lean-forward="true" selection-start-line="85" selection-start-column="37" selection-end-line="85" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GameWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-72">
-          <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+        <state relative-caret-position="239">
+          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#604#605#0" expanded="true" />
-            <element signature="e#656#657#0" expanded="true" />
+            <element signature="e#415#568#0" expanded="true" />
+            <element signature="e#567#568#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Program.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/images/players/straight/0.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GameCanvas.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1128">
+          <caret line="56" column="37" selection-start-line="56" selection-start-column="37" selection-end-line="56" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1155#1156#0" expanded="true" />
+            <element signature="e#1455#1456#0" expanded="true" />
+            <element signature="e#1491#1492#0" expanded="true" />
           </folding>
         </state>
       </provider>
