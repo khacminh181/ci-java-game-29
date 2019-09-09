@@ -3,7 +3,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
 import java.io.File;
 import java.io.IOException;
 
@@ -34,6 +33,12 @@ public class GameCanvas extends JPanel {
             public void keyPressed(KeyEvent e) {
                 if (e.getKeyCode() == KeyEvent.VK_UP) {
                     playerY--;
+                } else if (e.getKeyCode() == KeyEvent.VK_DOWN) {
+                    playerY++;
+                } else if (e.getKeyCode() == KeyEvent.VK_RIGHT) {
+                    playerX++;
+                } else if (e.getKeyCode() == KeyEvent.VK_LEFT) {
+                    playerX--;
                 }
             }
 
