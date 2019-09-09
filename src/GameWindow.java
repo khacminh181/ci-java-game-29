@@ -30,4 +30,16 @@ public class GameWindow extends JFrame {
             }
         }
     }
+
+//    public void gameLoop() {
+//        long lastTime = 0;
+//        while (true) {
+//            long currentTime = System.nanoTime();
+//            if (currentTime - lastTime >= 17_000_000) {
+//                this.canvas.run();
+//                this.canvas.repaint();
+//                lastTime = currentTime;
+//            }
+//        }
+//    }
 }
