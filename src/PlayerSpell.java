@@ -5,6 +5,8 @@ public class PlayerSpell {
     int x;
     int y;
 
+//    Vector2D position = new Vector2D(0, 0);
+
     public PlayerSpell() {
         this.image = SpriteUtils.loadImage("assets/images/player-spells/a/0.png");
         this.x = 0;
