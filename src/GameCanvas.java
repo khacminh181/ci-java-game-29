@@ -6,10 +6,16 @@ import java.awt.event.KeyEvent;
 public class GameCanvas extends JPanel {
     Background background;
     Player player;
+    Enemy enemy;
+    PlayerSpell playerSpell;
 
     public GameCanvas() {
         this.player = new Player();
         this.background = new Background();
+        this.enemy = new Enemy();
+        this.playerSpell = new PlayerSpell();
+        this.playerSpell.x = this.player.x;
+        this.playerSpell.y = this.player.y;
 
         this.keyListener();
     }
@@ -51,10 +57,14 @@ public class GameCanvas extends JPanel {
         g.fillRect(0, 0, 600, 600);
         this.background.render(g);
         this.player.render(g);
+        this.enemy.render(g);
+        this.playerSpell.render(g);
     }
 
     public void run() {
         this.background.run();
         this.player.run();
+        this.enemy.run();
+        this.playerSpell.run();
     }
 }

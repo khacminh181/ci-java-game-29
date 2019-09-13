@@ -1,7 +1,4 @@
-import javax.imageio.ImageIO;
 import java.awt.*;
-import java.io.File;
-import java.io.IOException;
 
 public class Player {
     Image image;
@@ -31,5 +28,8 @@ public class Player {
         if (KeyPressed.getInstance().leftPressed) {
             this.x -= 5;
         }
+
+        this.x = Utils.clamp(this.x, 0, 384 - 32);
+        this.y = Utils.clamp(this.y, 0, 600 - 40);
     }
 }
