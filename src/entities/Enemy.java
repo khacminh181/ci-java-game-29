@@ -1,3 +1,8 @@
+package entities;
+
+import bases.SpriteUtils;
+import bases.Vector2D;
+
 import java.awt.*;
 
 public class Enemy {

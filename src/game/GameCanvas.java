@@ -1,3 +1,10 @@
+package game;
+
+import bases.KeyPressed;
+import entities.Background;
+import entities.Enemy;
+import entities.Player;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyAdapter;

@@ -1,7 +1,10 @@
+package game;
+
+import game.GameCanvas;
+
 import javax.swing.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-import java.awt.event.WindowListener;
 
 public class GameWindow extends JFrame {
     GameCanvas canvas = new GameCanvas();

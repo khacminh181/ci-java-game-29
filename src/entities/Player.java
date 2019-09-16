@@ -1,3 +1,10 @@
+package entities;
+
+import bases.KeyPressed;
+import bases.SpriteUtils;
+import bases.Utils;
+import bases.Vector2D;
+
 import java.awt.*;
 import java.util.ArrayList;
 

@@ -1,10 +1,15 @@
+package entities;
+
+import bases.SpriteUtils;
+import bases.Vector2D;
+
 import java.awt.*;
 
 public class PlayerSpell {
     Image image;
     Vector2D position;
 
-//    Vector2D position = new Vector2D(0, 0);
+//    bases.Vector2D position = new bases.Vector2D(0, 0);
 
     public PlayerSpell() {
         this.image = SpriteUtils.loadImage("assets/images/player-spells/a/0.png");
