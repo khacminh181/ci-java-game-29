@@ -1,17 +1,12 @@
-import javax.imageio.ImageIO;
 import java.awt.*;
-import java.io.File;
-import java.io.IOException;
 
 public class Background {
     Image image;
-    int x;
-    int y;
+    Vector2D position;
 
     public Background() {
         this.image = SpriteUtils.loadImage("assets/images/background/0.png");
-        this.x = 0;
-        this.y = 600 - 3109;
+        this.position = new Vector2D(0, 600 - 3109);
     }
 
     /**
@@ -20,17 +15,17 @@ public class Background {
      * @param g
      */
     public void render(Graphics g) {
-        g.drawImage(this.image, this.x, this.y, null);
+        g.drawImage(this.image, (int)this.position.x, (int)this.position.y, null);
     }
 
     /**
      * Handle
      */
     public void run() {
-        if (this.y < 0) {
-            this.y += 10;
+        if (this.position.y < 0) {
+            this.position.y += 10;
         } else {
-            this.y = -3109 + 600;
+            this.position.y = -3109 + 600;
         }
     }
 }

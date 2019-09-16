@@ -3,21 +3,19 @@ import java.util.ArrayList;
 
 public class Player {
     Image image;
-    int x;
-    int y;
+    Vector2D position;
 
     ArrayList<PlayerSpell> playerSpells;
 
     public Player() {
         this.image = SpriteUtils.loadImage("assets/images/players/straight/0.png");
-        this.x = 175;
-        this.y = 500;
+        this.position = new Vector2D(175, 500);
 
         this.playerSpells = new ArrayList<>();
     }
 
     public void render(Graphics g) {
-        g.drawImage(this.image, this.x, this.y, null);
+        g.drawImage(this.image, (int)this.position.x, (int)this.position.y, null);
 
         // chay ham render cua tung spell
         for (int i = 0; i < this.playerSpells.size(); i++) {
@@ -29,16 +27,16 @@ public class Player {
     int count = 0;
     public void run() {
         if (KeyPressed.getInstance().upPressed) {
-            this.y -= 5;
+            this.position.y -= 5;
         }
         if (KeyPressed.getInstance().downPressed) {
-            this.y += 5;
+            this.position.y += 5;
         }
         if (KeyPressed.getInstance().rightPressed) {
-            this.x += 5;
+            this.position.x += 5;
         }
         if (KeyPressed.getInstance().leftPressed) {
-            this.x -= 5;
+            this.position.x -= 5;
         }
         if (KeyPressed.getInstance().shootPressed && count >= 20) {
             this.castSpell();
@@ -47,8 +45,8 @@ public class Player {
             count++;
         }
 
-        this.x = Utils.clamp(this.x, 0, 384 - 32);
-        this.y = Utils.clamp(this.y, 0, 600 - 40);
+        this.position.x = Utils.clamp(this.position.x, 0, 384 - 32);
+        this.position.y = Utils.clamp(this.position.y, 0, 600 - 40);
         // chay tung ham run cua spell
         for (int i = 0; i < this.playerSpells.size(); i++) {
             PlayerSpell playerSpell = this.playerSpells.get(i);
@@ -63,8 +61,8 @@ public class Player {
      */
     private void castSpell() {
         PlayerSpell newSpell = new PlayerSpell();
-        newSpell.x = this.x;
-        newSpell.y = this.y;
+        newSpell.position.x = this.position.x;
+        newSpell.position.y = this.position.y;
         playerSpells.add(newSpell);
     }
 }
