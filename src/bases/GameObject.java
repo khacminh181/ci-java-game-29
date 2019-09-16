@@ -1,13 +1,34 @@
 package bases;
 
 import java.awt.*;
+import java.util.ArrayList;
 
 public class GameObject {
+    private static ArrayList<GameObject> gameObjects = new ArrayList<>();
+
+    public static void add(GameObject gameObject) {
+        gameObjects.add(gameObject);
+    }
+
+    public static void renderAll(Graphics g) {
+        for (int i = 0; i < gameObjects.size(); i++) {
+            GameObject gameObject = gameObjects.get(i);
+            gameObject.render(g);
+        }
+    }
+
+    public static void runAll() {
+        for (int i = 0; i < gameObjects.size(); i++) {
+            GameObject gameObject = gameObjects.get(i);
+            gameObject.run();
+        }
+    }
+
     public Image image;
     public Vector2D position;
 
     public GameObject() {
-        System.out.println("dang ke thua nay");
+        GameObject.add(this);
         this.position = new Vector2D(0, 0);
     }
 

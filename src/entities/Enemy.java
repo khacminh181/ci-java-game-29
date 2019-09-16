@@ -4,8 +4,6 @@ import bases.GameObject;
 import bases.SpriteUtils;
 import bases.Vector2D;
 
-import java.awt.*;
-
 public class Enemy extends GameObject {
     public Enemy() {
         this.image = SpriteUtils.loadImage("assets/images/enemies/level0/pink/0.png");

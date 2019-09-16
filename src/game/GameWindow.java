@@ -1,5 +1,7 @@
 package game;
 
+import bases.GameObject;
+
 import javax.swing.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
@@ -22,7 +24,7 @@ public class GameWindow extends JFrame {
 
     public void gameLoop() {
         while (true) {
-            this.canvas.run();
+            GameObject.runAll();
             this.canvas.repaint();
             try {
                 Thread.sleep(17);

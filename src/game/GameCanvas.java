@@ -1,5 +1,6 @@
 package game;
 
+import bases.GameObject;
 import bases.KeyPressed;
 import entities.Background;
 import entities.Enemy;
@@ -16,9 +17,9 @@ public class GameCanvas extends JPanel {
     Enemy enemy;
 
     public GameCanvas() {
-        this.player = new Player();
         this.background = new Background();
         this.enemy = new Enemy();
+        this.player = new Player();
 
         this.keyListener();
     }
@@ -62,14 +63,7 @@ public class GameCanvas extends JPanel {
     protected void paintComponent(Graphics g) {
         g.setColor(Color.BLACK);
         g.fillRect(0, 0, 600, 600);
-        this.background.render(g);
-        this.player.render(g);
-        this.enemy.render(g);
+        GameObject.renderAll(g);
     }
 
-    public void run() {
-        this.background.run();
-        this.player.run();
-        this.enemy.run();
-    }
 }
