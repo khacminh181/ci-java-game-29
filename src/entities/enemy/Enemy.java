@@ -1,13 +1,13 @@
-package entities;
+package entities.enemy;
 
 import bases.BoxCollider;
 import bases.GameObject;
-import bases.SpriteUtils;
 import bases.Vector2D;
+import renderer.ImageRenderer;
 
 public class Enemy extends GameObject {
     public Enemy() {
-        this.image = SpriteUtils.loadImage("assets/images/enemies/level0/pink/0.png");
+        this.renderer = new ImageRenderer("assets/images/enemies/level0/pink/0.png");
         this.position = new Vector2D((float) Math.random() * 384, 0);
         this.boxCollider = new BoxCollider(this, 28, 28);
     }
@@ -27,7 +27,5 @@ public class Enemy extends GameObject {
     @Override
     public void reset() {
         super.reset();
-        position.set(-50, -50);
-        this.boxCollider = new BoxCollider(this, 28, 28);
     }
 }

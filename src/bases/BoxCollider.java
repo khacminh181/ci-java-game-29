@@ -1,7 +1,5 @@
 package bases;
 
-import java.awt.*;
-
 public class BoxCollider{
     Vector2D positon;
     float width, height;

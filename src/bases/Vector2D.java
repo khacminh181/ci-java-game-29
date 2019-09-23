@@ -19,7 +19,7 @@ public class Vector2D {
         this.y += y;
     }
 
-    public void appUp(Vector2D other) {
+    public void addUp(Vector2D other) {
         this.addUp(other.x, other.y);
     }
 
@@ -73,5 +73,10 @@ public class Vector2D {
         Vector2D v1 = new Vector2D(1,1);
         v1.addUp(1, 1);
         System.out.println(v1.toString());
+    }
+
+    public void set(float x, float y) {
+        this.x = x;
+        this.y = y;
     }
 }

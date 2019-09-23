@@ -1,4 +1,6 @@
 package bases;
+import renderer.Renderer;
+
 import java.awt.*;
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
@@ -24,7 +26,6 @@ public class GameObject {
             if (gameObject.isActive)
                 gameObject.run();
         }
-        System.out.println(gameObjects.size());
     }
 
     // Generics
@@ -68,23 +69,27 @@ public class GameObject {
         return null;
     }
 
-    public Image image;
+    public Renderer renderer;
     public Vector2D position;
+    public Vector2D  velocity;
     public BoxCollider boxCollider;
     public boolean isActive;
 
     public GameObject() {
         GameObject.add(this);
         this.position = new Vector2D(0, 0);
+        this.velocity = new Vector2D(0, 0);
         this.isActive = true;
     }
 
     public void render(Graphics g) {
-        g.drawImage(this.image, (int)this.position.x, (int)this.position.y, null);
+        if (renderer != null) {
+            renderer.render(g, this.position);
+        }
     }
 
     public void run() {
-
+        this.position.addUp(this.velocity);
     }
 
     public void deactive() {

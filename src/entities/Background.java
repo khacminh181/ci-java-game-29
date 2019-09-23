@@ -1,12 +1,12 @@
 package entities;
 
 import bases.GameObject;
-import bases.SpriteUtils;
 import bases.Vector2D;
+import renderer.ImageRenderer;
 
 public class Background extends GameObject {
     public Background() {
-        this.image = SpriteUtils.loadImage("assets/images/background/0.png");
+        this.renderer = new ImageRenderer("assets/images/background/0.png");
         this.position = new Vector2D(0, 600 - 3109);
     }
 
