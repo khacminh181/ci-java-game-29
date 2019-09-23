@@ -1,11 +1,13 @@
 package bases;
 
-public class BoxCollider {
+import java.awt.*;
+
+public class BoxCollider{
     Vector2D positon;
     float width, height;
 
-    public BoxCollider(Vector2D positon, float width, float height) {
-        this.positon = positon;
+    public BoxCollider(GameObject master, float width, float height) {
+        this.positon = master.position;
         this.width = width;
         this.height = height;
     }
@@ -24,13 +26,6 @@ public class BoxCollider {
 
     public float right() {
         return this.positon.x + this.width;
-    }
-
-    public static void main(String[] args) {
-        BoxCollider box1 = new BoxCollider(new Vector2D(0, 0), 5, 5);
-        BoxCollider box2 = new BoxCollider(new Vector2D(4, 4), 5, 5);
-
-        System.out.println(box1.collideWith(box2));
     }
 
     //ToDo: can lam gi dodo

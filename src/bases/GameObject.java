@@ -1,6 +1,6 @@
 package bases;
-
 import java.awt.*;
+import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 
 public class GameObject {
@@ -13,23 +13,70 @@ public class GameObject {
     public static void renderAll(Graphics g) {
         for (int i = 0; i < gameObjects.size(); i++) {
             GameObject gameObject = gameObjects.get(i);
-            gameObject.render(g);
+            if (gameObject.isActive)
+                gameObject.render(g);
         }
     }
 
     public static void runAll() {
         for (int i = 0; i < gameObjects.size(); i++) {
             GameObject gameObject = gameObjects.get(i);
-            gameObject.run();
+            if (gameObject.isActive)
+                gameObject.run();
         }
+        System.out.println(gameObjects.size());
+    }
+
+    // Generics
+    public static <T extends GameObject>T checkCollider(GameObject master, Class<T> cls) {
+        for (int i = 0; i < gameObjects.size(); i++) {
+            GameObject gameObject = gameObjects.get(i);
+            if (gameObject.getClass().equals(cls) && gameObject.isActive) {
+                if (gameObject.boxCollider != null) {
+                    if (master.boxCollider.collideWith(gameObject.boxCollider)) {
+                        return (T) gameObject;
+                    }
+                }
+            }
+        }
+        return null;
+    }
+
+    public static <E extends GameObject>E recycle(Class<E> cls) {
+        E gameObject = GameObject.findInactive(cls);
+        if (gameObject != null) {
+            gameObject.reset();
+            return gameObject;
+        }
+
+        try {
+            GameObject go = cls.getConstructor().newInstance();
+            return (E) go;
+        } catch (InstantiationException | IllegalAccessException | InvocationTargetException | NoSuchMethodException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    private static <E extends GameObject> E findInactive(Class<E> cls) {
+        for (int i = 0; i <  gameObjects.size(); i++) {
+            GameObject gameObject = gameObjects.get(i);
+            if (!gameObject.isActive && cls.isAssignableFrom(gameObject.getClass())) {
+                return (E) gameObject;
+            }
+        }
+        return null;
     }
 
     public Image image;
     public Vector2D position;
+    public BoxCollider boxCollider;
+    public boolean isActive;
 
     public GameObject() {
         GameObject.add(this);
         this.position = new Vector2D(0, 0);
+        this.isActive = true;
     }
 
     public void render(Graphics g) {
@@ -38,5 +85,13 @@ public class GameObject {
 
     public void run() {
 
+    }
+
+    public void deactive() {
+        this.isActive = false;
+    }
+
+    public void reset() {
+        this.isActive = true;
     }
 }

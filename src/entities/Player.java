@@ -3,9 +3,11 @@ package entities;
 import bases.*;
 
 public class Player extends GameObject {
+    FrameCounter frameCounter;
     public Player() {
         this.image = SpriteUtils.loadImage("assets/images/players/straight/0.png");
         this.position = new Vector2D(175, 500);
+        this.frameCounter = new FrameCounter(20);
     }
 
     int count = 0;
@@ -22,11 +24,11 @@ public class Player extends GameObject {
         if (KeyPressed.getInstance().leftPressed) {
             this.position.x -= 5;
         }
-        if (KeyPressed.getInstance().shootPressed && count >= 20) {
+        if (KeyPressed.getInstance().shootPressed && frameCounter.expired) {
             this.castSpell();
-            count = 0;
+            frameCounter.reset();
         } else {
-            count++;
+            frameCounter.run();
         }
 
         this.position.x = Utils.clamp(this.position.x, 0, 384 - 32);
