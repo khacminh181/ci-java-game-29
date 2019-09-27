@@ -3,6 +3,7 @@ package entities.enemy;
 import bases.BoxCollider;
 import bases.GameObject;
 import bases.Vector2D;
+import entities.player.Player;
 import renderer.ImageRenderer;
 
 public class Enemy extends GameObject {
@@ -16,6 +17,12 @@ public class Enemy extends GameObject {
     public void run() {
         this.deactiveIfNeeded();
         this.position.addUp(0, 1);
+
+        Player player = GameObject.checkCollider(this, Player.class);
+        if (player != null) {
+            this.deactive();
+            player.deactive();
+        }
     }
 
     public void deactiveIfNeeded() {
@@ -27,5 +34,12 @@ public class Enemy extends GameObject {
     @Override
     public void reset() {
         super.reset();
+    }
+
+    @Override
+    public void deactive() {
+        super.deactive();
+        EnemyExplosion enemyExplosion = new EnemyExplosion();
+        enemyExplosion.position.set(this.position);
     }
 }

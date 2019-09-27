@@ -12,6 +12,10 @@ public class GameObject {
         gameObjects.add(gameObject);
     }
 
+    public static void clear() {
+        gameObjects.clear();
+    }
+
     public static void renderAll(Graphics g) {
         for (int i = 0; i < gameObjects.size(); i++) {
             GameObject gameObject = gameObjects.get(i);
@@ -26,6 +30,7 @@ public class GameObject {
             if (gameObject.isActive)
                 gameObject.run();
         }
+        System.out.println(gameObjects.size());
     }
 
     // Generics

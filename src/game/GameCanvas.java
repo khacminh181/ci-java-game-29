@@ -2,10 +2,8 @@ package game;
 
 import bases.GameObject;
 import bases.KeyPressed;
-import entities.Background;
-import entities.enemy.Enemy;
-import entities.enemy.EnemySpawner;
-import entities.player.Player;
+import scene.SceneManager;
+import scene.welcomeScene.GameWelcomeScene;
 
 import javax.swing.*;
 import java.awt.*;
@@ -13,16 +11,8 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
 public class GameCanvas extends JPanel {
-    Background background;
-    Player player;
-    EnemySpawner enemySpawner;
-    Enemy enemy;
-
     public GameCanvas() {
-        this.background = new Background();
-        this.player = GameObject.recycle(Player.class);
-        enemySpawner = new EnemySpawner();
-//        enemy = new Enemy();
+        SceneManager.signNewScene(new GameWelcomeScene());
         this.keyListener();
     }
 
@@ -31,6 +21,7 @@ public class GameCanvas extends JPanel {
         this.addKeyListener(new KeyAdapter() {
             @Override
             public void keyPressed(KeyEvent e) {
+                KeyPressed.getInstance().anyKeyPressed = true;
                 if (e.getKeyCode() == KeyEvent.VK_UP) {
                     KeyPressed.getInstance().upPressed = true;
                 } else if (e.getKeyCode() == KeyEvent.VK_DOWN) {
@@ -46,6 +37,7 @@ public class GameCanvas extends JPanel {
 
             @Override
             public void keyReleased(KeyEvent e) {
+                KeyPressed.getInstance().anyKeyPressed = false;
                 if (e.getKeyCode() == KeyEvent.VK_UP) {
                     KeyPressed.getInstance().upPressed = false;
                 } else if (e.getKeyCode() == KeyEvent.VK_DOWN) {
@@ -64,7 +56,7 @@ public class GameCanvas extends JPanel {
     @Override
     protected void paintComponent(Graphics g) {
         g.setColor(Color.BLACK);
-        g.fillRect(0, 0, 600, 600);
+        g.fillRect(0, 0, 700, 600);
         GameObject.renderAll(g);
     }
 
