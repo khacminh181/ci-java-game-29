@@ -9,6 +9,7 @@ import scene.SceneManager;
 public class BackgroundWelcome extends GameObject {
 
     public BackgroundWelcome() {
+        this.anchor.set(0,0);
         this.renderer = new ImageRenderer("assets/images/scenes/menu.png");
     }
 

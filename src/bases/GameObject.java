@@ -79,17 +79,19 @@ public class GameObject {
     public Vector2D  velocity;
     public BoxCollider boxCollider;
     public boolean isActive;
+    public Vector2D anchor;
 
     public GameObject() {
         GameObject.add(this);
         this.position = new Vector2D(0, 0);
         this.velocity = new Vector2D(0, 0);
         this.isActive = true;
+        this.anchor = new Vector2D(0.5f, 0.5f);
     }
 
     public void render(Graphics g) {
         if (renderer != null) {
-            renderer.render(g, this.position);
+            renderer.render(g, this);
         }
     }
 
